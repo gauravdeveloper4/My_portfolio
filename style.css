@@ -312,9 +312,9 @@ span{
 
 .circle{
 
-    width:376px;
+    width:360px;
 
-    height:376px;
+    height:360px;
 
     border-radius:50%;
 
@@ -330,21 +330,21 @@ span{
 
     0 0 20px var(--main-color),
 
-    0 0 60px rgba(0,229,255,.45),
+    0 0 40px rgba(0,229,255,.45),
 
-    inset 0 0 30px rgba(0,229,255,.35);
+    inset 0 0 10px rgba(0,229,255,.35);
 
     position:absolute;
 
-    animation:glow 3s infinite alternate;
+    animation:infinite alternate;
 
 }
 
 .home-img img{         
 
-    width:360px;
+    width:370px;
 
-    height:360px;
+    height:370px;
 
     border-radius:50%;
 
@@ -354,11 +354,11 @@ span{
 
     object-position: center center;
 
-    box-shadow: 0 0 30px #00eeff;
+    box-shadow: 0 0 10px #00eeff;
 
     z-index:2;
 
-    margin-top:12px;
+    margin-top:5px;
 
 }
 
@@ -554,14 +554,14 @@ span{
 
 .education-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 2rem;
 }
 
 .education-card{
     background: var(--card-bg);
     border-radius: 20px;
-    padding: 3rem 2rem;
+    padding: 2rem 1.5rem;
     text-align: center;
     border-top: 4px solid var(--main-color);
     transition: .4s ease;
@@ -573,8 +573,8 @@ span{
 }
 
 .education-card i{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background: var(--main-color);
     color: #000;
@@ -582,36 +582,36 @@ span{
     align-items: center;
     justify-content: center;
     margin: auto;
-    font-size: 3.2rem;
-    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .education-card .year{
     display: inline-block;
-    padding: .7rem 1.8rem;
+    padding: .5rem 1.2rem;
     background: rgba(0,229,255,.15);
     color: var(--main-color);
     border-radius: 30px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 2rem;
 }
 
 .education-card h3{
-    font-size: 2.6rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 .education-card h4{
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     color: var(--main-color);
     margin-bottom: 1.5rem;
 }
 
 .education-card p{
     color: var(--text-light);
-    font-size: 1.5rem;
-    line-height: 1.8;
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 /* ==========================================
@@ -655,46 +655,52 @@ span{
 ========================================== */
 
 .skills{
-    padding:100px 10%;
+    padding: 100px 10%;
 }
 
 .skills .heading{
-    text-align:center;
-    font-size:5rem;
-    margin-bottom:50px;
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 50px;
 }
 
 .skills-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 25px;
 }
 
 .skill-card{
-    background:#111827;
-    border:2px solid rgba(0,238,255,.2);
-    border-radius:20px;
-    padding:35px;
-    text-align:center;
-    transition:.4s;
-    cursor:pointer;
+    background: #111827;
+    border: 2px solid rgba(0,238,255,.2);
+    border-radius: 20px;
+    height: 170px;              /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s;
+    cursor: pointer;
+    padding: 15px;
 }
 
 .skill-card:hover{
-    transform:translateY(-12px);
-    border-color:var(--main-color);
-    box-shadow:0 0 25px var(--main-color);
+    transform: translateY(-10px);
+    border-color: var(--main-color);
+    box-shadow: 0 0 20px var(--main-color);
 }
 
 .skill-card i{
-    font-size:70px;
-    margin-bottom:20px;
+    font-size: 35px;
+    margin-bottom: 15px;
 }
 
 .skill-card h3{
-    color:#fff;
-    font-size:2rem;
-    font-weight:600;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.3;
 }
 
 .skill-card:hover i{
@@ -712,117 +718,80 @@ span{
 
 .certificate-container{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
     margin-top:50px;
 }
 
 .certificate-card{
-
     position:relative;
-    padding:35px 25px;
-
-    text-align:center;
-
+    background:rgba(255,255,255,.05);
+    border:2px solid rgba(0,238,255,.2);
+    backdrop-filter:blur(12px);
     border-radius:20px;
 
-    background:rgba(255,255,255,.05);
+    height:320px;              /* Fixed Height */
+    padding:20px 15px;
 
-    border:2px solid rgba(0,238,255,.2);
-
-    backdrop-filter:blur(12px);
-
-    transition:.5s;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    text-align:center;
 
     overflow:hidden;
+    transition:.4s;
 }
 
 .certificate-card:hover{
-
-    transform:translateY(-12px) scale(1.03);
-
+    transform:translateY(-10px);
     border-color:var(--main-color);
-
-    box-shadow:
-    0 0 20px var(--main-color),
-    0 0 45px rgba(0,238,255,.35);
-
+    box-shadow:0 0 25px rgba(0,238,255,.35);
 }
 
 .certificate-icon{
-
-    width:90px;
-
-    height:90px;
-
-    margin:auto;
-
-    border-radius:50%;
+    width:65px;
+    height:65px;
+    margin-bottom:15px;
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
+    border-radius:50%;
     background:rgba(0,238,255,.12);
-
     border:2px solid var(--main-color);
 
+    font-size:30px;
     color:var(--main-color);
-
-    font-size:45px;
-
-    margin-bottom:20px;
-
 }
 
 .certificate-card h3{
-
-    color:white;
-
-    font-size:2.2rem;
-
-    margin-bottom:10px;
-
+    font-size:1.7rem;
+    color:#fff;
+    margin:10px 0;
 }
 
 .certificate-card p{
-
+    font-size:1.2rem;
     color:#cfcfcf;
-
-    font-size:1.5rem;
-
-    margin-bottom:25px;
-
+    line-height:1.5;
 }
 
 .certificate-btn{
-
     display:inline-block;
-
-    padding:12px 28px;
-
-    border-radius:40px;
-
+    padding:10px 22px;
     border:2px solid var(--main-color);
-
+    border-radius:40px;
     color:var(--main-color);
-
     text-decoration:none;
-
-    transition:.4s;
-
     font-weight:600;
-
+    transition:.3s;
 }
 
 .certificate-btn:hover{
-
     background:var(--main-color);
-
     color:#081b29;
-
 }
 /* ==========================================
    Certificate  box-Movement One by one
@@ -880,26 +849,27 @@ animation:float 4s ease-in-out infinite;
 ========================================== */
 
 .projects{
-    background:var(--bg-color);
+    background: var(--bg-color);
+    padding: 80px 10%;
 }
 
 .project-container{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
-    gap:3rem;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:2rem;
 }
 
 .project-card{
     background:var(--card-bg);
-    border-radius:18px;
+    border-radius:16px;
     overflow:hidden;
-    transition:.4s ease;
     border:1px solid rgba(255,255,255,.08);
+    transition:.4s ease;
 }
 
 .project-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 25px rgba(0,229,255,.35);
+    transform:translateY(-8px);
+    box-shadow:0 0 18px rgba(0,229,255,.30);
 }
 
 .project-image{
@@ -908,68 +878,55 @@ animation:float 4s ease-in-out infinite;
 
 .project-image img{
     width:100%;
-    height:230px;
+    height:180px;
     object-fit:cover;
-    transition:.5s;
+    transition:.4s;
 }
 
 .project-card:hover img{
-    transform:scale(1.08);
+    transform:scale(1.05);
 }
 
 .project-content{
-    padding:2.5rem;
+    padding:18px;
 }
 
 .project-content h3{
-    font-size:2.4rem;
-    margin-bottom:1rem;
+    font-size:2rem;
+    margin-bottom:10px;
 }
 
 .project-content p{
-    font-size:1.5rem;
-    color:var(--text-light);
-    line-height:1.8;
-    margin-bottom:2rem;
+    font-size:1.3rem;
+    line-height:1.6;
+    margin-bottom:15px;
 }
 
 .project-tech{
     display:flex;
     flex-wrap:wrap;
-    gap:1rem;
-    margin-bottom:2rem;
+    gap:8px;
+    margin-bottom:18px;
 }
 
 .project-tech span{
-    padding:.7rem 1.5rem;
+    padding:6px 12px;
+    font-size:1.1rem;
+    border-radius:20px;
     background:rgba(0,229,255,.15);
     color:var(--main-color);
-    border-radius:30px;
-    font-size:1.3rem;
-    font-weight:600;
 }
 
 .project-buttons{
     display:flex;
-    gap:1.5rem;
+    gap:12px;
 }
 
 .project-buttons .btn{
     flex:1;
+    padding:10px 0;
     text-align:center;
-    padding:1.2rem;
-    font-size:1.5rem;
-}
-
-.project-buttons .btn-outline{
-    border:2px solid var(--main-color);
-    color:var(--main-color);
-    background:transparent;
-}
-
-.project-buttons .btn-outline:hover{
-    background:var(--main-color);
-    color:#000;
+    font-size:1.3rem;
 }
 
 /* ==========================================
